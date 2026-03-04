@@ -13,6 +13,9 @@ final class CollageProject {
     @Relationship(deleteRule: .cascade, inverse: \ClippedItem.project)
     var layers: [ClippedItem]
 
+    @Relationship(deleteRule: .cascade, inverse: \TextElement.project)
+    var textElements: [TextElement]
+
     var canvasSize: CGSize {
         get { CGSize(width: canvasWidth, height: canvasHeight) }
         set { canvasWidth = newValue.width; canvasHeight = newValue.height }
@@ -25,6 +28,7 @@ final class CollageProject {
         self.createdAt = .now
         self.modifiedAt = .now
         self.layers = []
+        self.textElements = []
     }
 }
 
@@ -33,6 +37,7 @@ extension CollageProject: PreviewData {
     static var preview: CollageProject {
         let project = CollageProject(name: "Summer Vibes")
         project.layers = ClippedItem.previewList
+        project.textElements = TextElement.previewList
         return project
     }
 

@@ -7,6 +7,7 @@ enum CloudKitSyncManager {
     static let schema = Schema([
         CollageProject.self,
         ClippedItem.self,
+        TextElement.self,
     ])
 
     /// Creates a model container with CloudKit sync enabled.
