@@ -41,6 +41,13 @@
 		A100000100000000000000309 /* BookmarkedPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000309; };
 		A100000100000000000000310 /* MagazineReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000310; };
 		A100000100000000000000311 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000311; };
+		0DE093EF8ECC4C5CA018BF91 /* SmartClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D11CAA05140A18221F958 /* SmartClippingView.swift */; };
+		1B9A702A6B1F42BBAA682F47 /* SmartClippingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21167A4FBB4CBF9DDFFE0D /* SmartClippingViewModel.swift */; };
+		0151953FB71545E1B6D73364 /* ClippingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE30DEA237F422181804097 /* ClippingCanvasView.swift */; };
+		F885BFEAD5444768AB8C3D47 /* ClippingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81735628E7480E9A636B9D /* ClippingToolbar.swift */; };
+		11F5D08FFBEE47C49EE41977 /* ImageSourcePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */; };
+		22B613B33B7541F29E77B1C1 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */; };
+		F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +86,13 @@
 		A200000100000000000000309 /* BookmarkedPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedPagesView.swift; sourceTree = "<group>"; };
 		A200000100000000000000310 /* MagazineReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineReaderView.swift; sourceTree = "<group>"; };
 		A200000100000000000000311 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
+		231D11CAA05140A18221F958 /* SmartClippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartClippingView.swift; sourceTree = "<group>"; };
+		0D21167A4FBB4CBF9DDFFE0D /* SmartClippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartClippingViewModel.swift; sourceTree = "<group>"; };
+		AAE30DEA237F422181804097 /* ClippingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingCanvasView.swift; sourceTree = "<group>"; };
+		5B81735628E7480E9A636B9D /* ClippingToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippingToolbar.swift; sourceTree = "<group>"; };
+		67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourcePicker.swift; sourceTree = "<group>"; };
+		DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipConfirmationSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +150,7 @@
 				A40000010000000000000005 /* Home */,
 				A40000010000000000000006 /* MagazineBrowser */,
 				A40000010000000000000007 /* CollageCanvas */,
+				33A08EB9A4604019B7CC025F /* SmartClipping */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +240,28 @@
 				A200000100000000000000307 /* CuratedCollectionRow.swift */,
 				A200000100000000000000308 /* RecentlyBrowsedRow.swift */,
 				A200000100000000000000309 /* BookmarkedPagesView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		33A08EB9A4604019B7CC025F /* SmartClipping */ = {
+			isa = PBXGroup;
+			children = (
+				231D11CAA05140A18221F958 /* SmartClippingView.swift */,
+				0D21167A4FBB4CBF9DDFFE0D /* SmartClippingViewModel.swift */,
+				AAE30DEA237F422181804097 /* ClippingCanvasView.swift */,
+				ED7E3FE8B63D4AEEA65E4F46 /* Components */,
+			);
+			path = SmartClipping;
+			sourceTree = "<group>";
+		};
+		ED7E3FE8B63D4AEEA65E4F46 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B81735628E7480E9A636B9D /* ClippingToolbar.swift */,
+				67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */,
+				DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */,
+				ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -331,6 +368,13 @@
 				A100000100000000000000309 /* BookmarkedPagesView.swift in Sources */,
 				A100000100000000000000310 /* MagazineReaderView.swift in Sources */,
 				A100000100000000000000311 /* CollectionDetailView.swift in Sources */,
+				0DE093EF8ECC4C5CA018BF91 /* SmartClippingView.swift in Sources */,
+				1B9A702A6B1F42BBAA682F47 /* SmartClippingViewModel.swift in Sources */,
+				0151953FB71545E1B6D73364 /* ClippingCanvasView.swift in Sources */,
+				F885BFEAD5444768AB8C3D47 /* ClippingToolbar.swift in Sources */,
+				11F5D08FFBEE47C49EE41977 /* ImageSourcePicker.swift in Sources */,
+				22B613B33B7541F29E77B1C1 /* CameraCaptureView.swift in Sources */,
+				F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
