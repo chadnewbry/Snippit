@@ -13,6 +13,11 @@ struct ContentView: View {
                     Label("Magazine Browser", systemImage: "book")
                 }
 
+            SmartClippingView()
+                .tabItem {
+                    Label("Smart Clip", systemImage: "scissors")
+                }
+
             CollageCanvasView()
                 .tabItem {
                     Label("Collage Canvas", systemImage: "rectangle.on.rectangle")
