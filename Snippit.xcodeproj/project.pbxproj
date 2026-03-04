@@ -48,6 +48,13 @@
 		11F5D08FFBEE47C49EE41977 /* ImageSourcePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */; };
 		22B613B33B7541F29E77B1C1 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */; };
 		F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */; };
+		870813614A02AAE953E37996 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283D8089F8B899594C91205; };
+		A262A8507313267DF832E041 /* CanvasBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F65E64D7B282E2AF12E92; };
+		C6BF7E5E0DB524264A81916C /* CanvasIngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D7793478F8E9F0D098815; };
+		E78057699F06B6FC1F11FB68 /* CanvasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AA64038EEA7CDF4A7ED22; };
+		094350B7B6436C67E5A90AE5 /* CanvasToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D24660C48F27A64E2120; };
+		78F395AB1A42E8EF5067E374 /* GridOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AEC9206C7F336346C39C; };
+		DA3518DB19FE862671C8375C /* SnapGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB605480799EC7433059B2A; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +100,13 @@
 		67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSourcePicker.swift; sourceTree = "<group>"; };
 		DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
 		ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipConfirmationSheet.swift; sourceTree = "<group>"; };
+		8283D8089F8B899594C91205 /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
+		445F65E64D7B282E2AF12E92 /* CanvasBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasBackgroundView.swift; sourceTree = "<group>"; };
+		8D2D7793478F8E9F0D098815 /* CanvasIngredientsTrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasIngredientsTrayView.swift; sourceTree = "<group>"; };
+		274AA64038EEA7CDF4A7ED22 /* CanvasItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasItemView.swift; sourceTree = "<group>"; };
+		DD44D24660C48F27A64E2120 /* CanvasToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasToolbarView.swift; sourceTree = "<group>"; };
+		B4D0AEC9206C7F336346C39C /* GridOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridOverlayView.swift; sourceTree = "<group>"; };
+		9BB605480799EC7433059B2A /* SnapGuidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapGuidesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +193,23 @@
 			isa = PBXGroup;
 			children = (
 				A20000010000000000000005 /* CollageCanvasView.swift */,
+				8283D8089F8B899594C91205 /* CanvasViewModel.swift */,
+				9320AF9D0F6A58D1FBB304C1 /* Components */,
 			);
 			path = CollageCanvas;
+			sourceTree = "<group>";
+		};
+		9320AF9D0F6A58D1FBB304C1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				445F65E64D7B282E2AF12E92 /* CanvasBackgroundView.swift */,
+				8D2D7793478F8E9F0D098815 /* CanvasIngredientsTrayView.swift */,
+				274AA64038EEA7CDF4A7ED22 /* CanvasItemView.swift */,
+				DD44D24660C48F27A64E2120 /* CanvasToolbarView.swift */,
+				B4D0AEC9206C7F336346C39C /* GridOverlayView.swift */,
+				9BB605480799EC7433059B2A /* SnapGuidesView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A40000010000000000000008 /* Models */ = {
@@ -340,6 +369,13 @@
 				A10000010000000000000003 /* HomeView.swift in Sources */,
 				A10000010000000000000004 /* MagazineBrowserView.swift in Sources */,
 				A10000010000000000000005 /* CollageCanvasView.swift in Sources */,
+				870813614A02AAE953E37996 /* CanvasViewModel.swift in Sources */,
+				A262A8507313267DF832E041 /* CanvasBackgroundView.swift in Sources */,
+				C6BF7E5E0DB524264A81916C /* CanvasIngredientsTrayView.swift in Sources */,
+				E78057699F06B6FC1F11FB68 /* CanvasItemView.swift in Sources */,
+				094350B7B6436C67E5A90AE5 /* CanvasToolbarView.swift in Sources */,
+				78F395AB1A42E8EF5067E374 /* GridOverlayView.swift in Sources */,
+				DA3518DB19FE862671C8375C /* SnapGuidesView.swift in Sources */,
 				A10000010000000000000101 /* PreviewData.swift in Sources */,
 				A10000010000000000000102 /* CollageProject.swift in Sources */,
 				A10000010000000000000103 /* ClippedItem.swift in Sources */,
