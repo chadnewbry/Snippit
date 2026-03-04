@@ -21,6 +21,14 @@
 		A10000010000000000000106 /* AIClippingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000106; };
 		A10000010000000000000107 /* PaperEffectsRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000107; };
 		A10000010000000000000108 /* CloudKitSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000108; };
+		A10000010000000000000200 /* CanvasSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000200; };
+		A10000010000000000000201 /* StarterTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000201; };
+		A10000010000000000000202 /* InspirationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000202; };
+		A10000010000000000000203 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000203; };
+		A10000010000000000000204 /* NewCollageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000204; };
+		A10000010000000000000205 /* TemplateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000205; };
+		A10000010000000000000206 /* InspirationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000206; };
+		A10000010000000000000207 /* IngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000207; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		A20000010000000000000106 /* AIClippingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClippingEngine.swift; sourceTree = "<group>"; };
 		A20000010000000000000107 /* PaperEffectsRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperEffectsRenderer.swift; sourceTree = "<group>"; };
 		A20000010000000000000108 /* CloudKitSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSyncManager.swift; sourceTree = "<group>"; };
+		A20000010000000000000200 /* CanvasSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSize.swift; sourceTree = "<group>"; };
+		A20000010000000000000201 /* StarterTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterTemplate.swift; sourceTree = "<group>"; };
+		A20000010000000000000202 /* InspirationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationItem.swift; sourceTree = "<group>"; };
+		A20000010000000000000203 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		A20000010000000000000204 /* NewCollageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCollageButton.swift; sourceTree = "<group>"; };
+		A20000010000000000000205 /* TemplateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRowView.swift; sourceTree = "<group>"; };
+		A20000010000000000000206 /* InspirationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationGalleryView.swift; sourceTree = "<group>"; };
+		A20000010000000000000207 /* IngredientsTrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTrayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A20000010000000000000003 /* HomeView.swift */,
+				A40000010000000000000011 /* Components */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -131,6 +148,9 @@
 				A20000010000000000000102 /* CollageProject.swift */,
 				A20000010000000000000103 /* ClippedItem.swift */,
 				A20000010000000000000104 /* MagazineItem.swift */,
+				A20000010000000000000200 /* CanvasSize.swift */,
+				A20000010000000000000201 /* StarterTemplate.swift */,
+				A20000010000000000000202 /* InspirationItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +171,18 @@
 				A20000010000000000000105 /* MagazineManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000011 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000203 /* ProjectCardView.swift */,
+				A20000010000000000000204 /* NewCollageButton.swift */,
+				A20000010000000000000205 /* TemplateRowView.swift */,
+				A20000010000000000000206 /* InspirationGalleryView.swift */,
+				A20000010000000000000207 /* IngredientsTrayView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +267,14 @@
 				A10000010000000000000106 /* AIClippingEngine.swift in Sources */,
 				A10000010000000000000107 /* PaperEffectsRenderer.swift in Sources */,
 				A10000010000000000000108 /* CloudKitSyncManager.swift in Sources */,
+				A10000010000000000000200 /* CanvasSize.swift in Sources */,
+				A10000010000000000000201 /* StarterTemplate.swift in Sources */,
+				A10000010000000000000202 /* InspirationItem.swift in Sources */,
+				A10000010000000000000203 /* ProjectCardView.swift in Sources */,
+				A10000010000000000000204 /* NewCollageButton.swift in Sources */,
+				A10000010000000000000205 /* TemplateRowView.swift in Sources */,
+				A10000010000000000000206 /* InspirationGalleryView.swift in Sources */,
+				A10000010000000000000207 /* IngredientsTrayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
