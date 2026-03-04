@@ -29,6 +29,18 @@
 		A10000010000000000000205 /* TemplateRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000205; };
 		A10000010000000000000206 /* InspirationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000206; };
 		A10000010000000000000207 /* IngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000207; };
+		A100000100000000000000300 /* MagazineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000300; };
+		A100000100000000000000301 /* CuratedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000301; };
+		A100000100000000000000302 /* BookmarkedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000302; };
+		A100000100000000000000303 /* BrowsingHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000303; };
+		A100000100000000000000304 /* CategoryFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000304; };
+		A100000100000000000000305 /* DecadeFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000305; };
+		A100000100000000000000306 /* MagazineCoverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000306; };
+		A100000100000000000000307 /* CuratedCollectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000307; };
+		A100000100000000000000308 /* RecentlyBrowsedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000308; };
+		A100000100000000000000309 /* BookmarkedPagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000309; };
+		A100000100000000000000310 /* MagazineReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000310; };
+		A100000100000000000000311 /* CollectionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000100000000000000311; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +67,18 @@
 		A20000010000000000000205 /* TemplateRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateRowView.swift; sourceTree = "<group>"; };
 		A20000010000000000000206 /* InspirationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationGalleryView.swift; sourceTree = "<group>"; };
 		A20000010000000000000207 /* IngredientsTrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsTrayView.swift; sourceTree = "<group>"; };
+		A200000100000000000000300 /* MagazineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineCategory.swift; sourceTree = "<group>"; };
+		A200000100000000000000301 /* CuratedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedCollection.swift; sourceTree = "<group>"; };
+		A200000100000000000000302 /* BookmarkedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedPage.swift; sourceTree = "<group>"; };
+		A200000100000000000000303 /* BrowsingHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsingHistoryManager.swift; sourceTree = "<group>"; };
+		A200000100000000000000304 /* CategoryFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterBar.swift; sourceTree = "<group>"; };
+		A200000100000000000000305 /* DecadeFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecadeFilterBar.swift; sourceTree = "<group>"; };
+		A200000100000000000000306 /* MagazineCoverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineCoverCard.swift; sourceTree = "<group>"; };
+		A200000100000000000000307 /* CuratedCollectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuratedCollectionRow.swift; sourceTree = "<group>"; };
+		A200000100000000000000308 /* RecentlyBrowsedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyBrowsedRow.swift; sourceTree = "<group>"; };
+		A200000100000000000000309 /* BookmarkedPagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkedPagesView.swift; sourceTree = "<group>"; };
+		A200000100000000000000310 /* MagazineReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineReaderView.swift; sourceTree = "<group>"; };
+		A200000100000000000000311 /* CollectionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				A20000010000000000000004 /* MagazineBrowserView.swift */,
+				A200000100000000000000310 /* MagazineReaderView.swift */,
+				A200000100000000000000311 /* CollectionDetailView.swift */,
+				A40000010000000000000012 /* Components */,
 			);
 			path = MagazineBrowser;
 			sourceTree = "<group>";
@@ -151,6 +178,9 @@
 				A20000010000000000000200 /* CanvasSize.swift */,
 				A20000010000000000000201 /* StarterTemplate.swift */,
 				A20000010000000000000202 /* InspirationItem.swift */,
+				A200000100000000000000300 /* MagazineCategory.swift */,
+				A200000100000000000000301 /* CuratedCollection.swift */,
+				A200000100000000000000302 /* BookmarkedPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A20000010000000000000105 /* MagazineManager.swift */,
+				A200000100000000000000303 /* BrowsingHistoryManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -181,6 +212,19 @@
 				A20000010000000000000205 /* TemplateRowView.swift */,
 				A20000010000000000000206 /* InspirationGalleryView.swift */,
 				A20000010000000000000207 /* IngredientsTrayView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000012 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A200000100000000000000304 /* CategoryFilterBar.swift */,
+				A200000100000000000000305 /* DecadeFilterBar.swift */,
+				A200000100000000000000306 /* MagazineCoverCard.swift */,
+				A200000100000000000000307 /* CuratedCollectionRow.swift */,
+				A200000100000000000000308 /* RecentlyBrowsedRow.swift */,
+				A200000100000000000000309 /* BookmarkedPagesView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -275,6 +319,18 @@
 				A10000010000000000000205 /* TemplateRowView.swift in Sources */,
 				A10000010000000000000206 /* InspirationGalleryView.swift in Sources */,
 				A10000010000000000000207 /* IngredientsTrayView.swift in Sources */,
+				A100000100000000000000300 /* MagazineCategory.swift in Sources */,
+				A100000100000000000000301 /* CuratedCollection.swift in Sources */,
+				A100000100000000000000302 /* BookmarkedPage.swift in Sources */,
+				A100000100000000000000303 /* BrowsingHistoryManager.swift in Sources */,
+				A100000100000000000000304 /* CategoryFilterBar.swift in Sources */,
+				A100000100000000000000305 /* DecadeFilterBar.swift in Sources */,
+				A100000100000000000000306 /* MagazineCoverCard.swift in Sources */,
+				A100000100000000000000307 /* CuratedCollectionRow.swift in Sources */,
+				A100000100000000000000308 /* RecentlyBrowsedRow.swift in Sources */,
+				A100000100000000000000309 /* BookmarkedPagesView.swift in Sources */,
+				A100000100000000000000310 /* MagazineReaderView.swift in Sources */,
+				A100000100000000000000311 /* CollectionDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
