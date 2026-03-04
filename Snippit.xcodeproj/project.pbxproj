@@ -13,6 +13,14 @@
 		A10000010000000000000004 /* MagazineBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000004; };
 		A10000010000000000000005 /* CollageCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000005; };
 		A10000010000000000000006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000006; };
+		A10000010000000000000101 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000101; };
+		A10000010000000000000102 /* CollageProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000102; };
+		A10000010000000000000103 /* ClippedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000103; };
+		A10000010000000000000104 /* MagazineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000104; };
+		A10000010000000000000105 /* MagazineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000105; };
+		A10000010000000000000106 /* AIClippingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000106; };
+		A10000010000000000000107 /* PaperEffectsRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000107; };
+		A10000010000000000000108 /* CloudKitSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000108; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +31,14 @@
 		A20000010000000000000005 /* CollageCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageCanvasView.swift; sourceTree = "<group>"; };
 		A20000010000000000000006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A20000010000000000000010 /* Snippit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snippit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000010000000000000101 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		A20000010000000000000102 /* CollageProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageProject.swift; sourceTree = "<group>"; };
+		A20000010000000000000103 /* ClippedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClippedItem.swift; sourceTree = "<group>"; };
+		A20000010000000000000104 /* MagazineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineItem.swift; sourceTree = "<group>"; };
+		A20000010000000000000105 /* MagazineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineManager.swift; sourceTree = "<group>"; };
+		A20000010000000000000106 /* AIClippingEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClippingEngine.swift; sourceTree = "<group>"; };
+		A20000010000000000000107 /* PaperEffectsRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperEffectsRenderer.swift; sourceTree = "<group>"; };
+		A20000010000000000000108 /* CloudKitSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitSyncManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +73,7 @@
 			children = (
 				A40000010000000000000003 /* App */,
 				A40000010000000000000004 /* Views */,
+				A40000010000000000000010 /* Managers */,
 				A40000010000000000000008 /* Models */,
 				A40000010000000000000009 /* Services */,
 				A20000010000000000000006 /* Assets.xcassets */,
@@ -110,6 +127,10 @@
 		A40000010000000000000008 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A20000010000000000000101 /* PreviewData.swift */,
+				A20000010000000000000102 /* CollageProject.swift */,
+				A20000010000000000000103 /* ClippedItem.swift */,
+				A20000010000000000000104 /* MagazineItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,8 +138,19 @@
 		A40000010000000000000009 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A20000010000000000000106 /* AIClippingEngine.swift */,
+				A20000010000000000000107 /* PaperEffectsRenderer.swift */,
+				A20000010000000000000108 /* CloudKitSyncManager.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A40000010000000000000010 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000105 /* MagazineManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +227,14 @@
 				A10000010000000000000003 /* HomeView.swift in Sources */,
 				A10000010000000000000004 /* MagazineBrowserView.swift in Sources */,
 				A10000010000000000000005 /* CollageCanvasView.swift in Sources */,
+				A10000010000000000000101 /* PreviewData.swift in Sources */,
+				A10000010000000000000102 /* CollageProject.swift in Sources */,
+				A10000010000000000000103 /* ClippedItem.swift in Sources */,
+				A10000010000000000000104 /* MagazineItem.swift in Sources */,
+				A10000010000000000000105 /* MagazineManager.swift in Sources */,
+				A10000010000000000000106 /* AIClippingEngine.swift in Sources */,
+				A10000010000000000000107 /* PaperEffectsRenderer.swift in Sources */,
+				A10000010000000000000108 /* CloudKitSyncManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
