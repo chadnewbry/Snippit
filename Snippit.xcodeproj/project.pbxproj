@@ -64,6 +64,19 @@
 		EC164F298FC03AF6283C2335 /* TextElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D45B5A28CEB1865758412 /* TextElementView.swift */; };
 		F885BFEAD5444768AB8C3D47 /* ClippingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81735628E7480E9A636B9D /* ClippingToolbar.swift */; };
 		F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */; };
+		BD00000000000001 /* StickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000001 /* StickerItem.swift */; };
+		BD00000000000002 /* DoodleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000002 /* DoodleBrush.swift */; };
+		BD00000000000003 /* ShapeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000003 /* ShapeStamp.swift */; };
+		BD00000000000010 /* StickersDecorationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000010 /* StickersDecorationsView.swift */; };
+		BD00000000000011 /* DecorationTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000011 /* DecorationTabBar.swift */; };
+		BD00000000000012 /* DecorationCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000012 /* DecorationCanvasView.swift */; };
+		BD00000000000013 /* DecorationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000013 /* DecorationItemView.swift */; };
+		BD00000000000014 /* StickerPackBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000014 /* StickerPackBrowserView.swift */; };
+		BD00000000000015 /* StickerRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000015 /* StickerRendererView.swift */; };
+		BD00000000000016 /* DoodleToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000016 /* DoodleToolView.swift */; };
+		BD00000000000017 /* DoodleStrokeRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000017 /* DoodleStrokeRendererView.swift */; };
+		BD00000000000018 /* ShapeStampPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000018 /* ShapeStampPickerView.swift */; };
+		BD00000000000019 /* ShapeStampRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000019 /* ShapeStampRendererView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +138,19 @@
 		ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipConfirmationSheet.swift; sourceTree = "<group>"; };
 		F22346348A999A8D5175B847 /* FontLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontLibrary.swift; path = Snippit/Models/FontLibrary.swift; sourceTree = SOURCE_ROOT; };
 		F2DA4B6CBF2F262459BBA68E /* TextOnPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextOnPaperView.swift; path = Snippit/Views/TextTypography/Components/TextOnPaperView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000001 /* StickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StickerItem.swift; path = Snippit/Models/StickerItem.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000002 /* DoodleBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoodleBrush.swift; path = Snippit/Models/DoodleBrush.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000003 /* ShapeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStamp.swift; path = Snippit/Models/ShapeStamp.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000010 /* StickersDecorationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StickersDecorationsView.swift; path = Snippit/Views/StickersDecorations/StickersDecorationsView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000011 /* DecorationTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecorationTabBar.swift; path = Snippit/Views/StickersDecorations/Components/DecorationTabBar.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000012 /* DecorationCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecorationCanvasView.swift; path = Snippit/Views/StickersDecorations/Components/DecorationCanvasView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000013 /* DecorationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DecorationItemView.swift; path = Snippit/Views/StickersDecorations/Components/DecorationItemView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000014 /* StickerPackBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StickerPackBrowserView.swift; path = Snippit/Views/StickersDecorations/Components/StickerPackBrowserView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000015 /* StickerRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StickerRendererView.swift; path = Snippit/Views/StickersDecorations/Components/StickerRendererView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000016 /* DoodleToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoodleToolView.swift; path = Snippit/Views/StickersDecorations/Components/DoodleToolView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000017 /* DoodleStrokeRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoodleStrokeRendererView.swift; path = Snippit/Views/StickersDecorations/Components/DoodleStrokeRendererView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000018 /* ShapeStampPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampPickerView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampPickerView.swift; sourceTree = SOURCE_ROOT; };
+		SD00000000000019 /* ShapeStampRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampRendererView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampRendererView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +234,7 @@
 				A40000010000000000000006 /* MagazineBrowser */,
 				A40000010000000000000007 /* CollageCanvas */,
 				33A08EB9A4604019B7CC025F /* SmartClipping */,
+				SD00000000000080 /* StickersDecorations */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +282,9 @@
 				A200000100000000000000300 /* MagazineCategory.swift */,
 				A200000100000000000000301 /* CuratedCollection.swift */,
 				A200000100000000000000302 /* BookmarkedPage.swift */,
+				SD00000000000001 /* StickerItem.swift */,
+				SD00000000000002 /* DoodleBrush.swift */,
+				SD00000000000003 /* ShapeStamp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,6 +350,31 @@
 				ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		SD00000000000090 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				SD00000000000011 /* DecorationTabBar.swift */,
+				SD00000000000012 /* DecorationCanvasView.swift */,
+				SD00000000000013 /* DecorationItemView.swift */,
+				SD00000000000014 /* StickerPackBrowserView.swift */,
+				SD00000000000015 /* StickerRendererView.swift */,
+				SD00000000000016 /* DoodleToolView.swift */,
+				SD00000000000017 /* DoodleStrokeRendererView.swift */,
+				SD00000000000018 /* ShapeStampPickerView.swift */,
+				SD00000000000019 /* ShapeStampRendererView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		SD00000000000080 /* StickersDecorations */ = {
+			isa = PBXGroup;
+			children = (
+				SD00000000000010 /* StickersDecorationsView.swift */,
+				SD00000000000090 /* Components */,
+			);
+			path = StickersDecorations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -447,6 +502,19 @@
 				87784215A931024B5F1A51B0 /* TextOnPaperView.swift in Sources */,
 				6B8947649CD46937606155C9 /* FontPickerView.swift in Sources */,
 				20EA4284BCC57A1D0381B0B3 /* TextStyleEditorView.swift in Sources */,
+				BD00000000000001 /* StickerItem.swift in Sources */,
+				BD00000000000002 /* DoodleBrush.swift in Sources */,
+				BD00000000000003 /* ShapeStamp.swift in Sources */,
+				BD00000000000010 /* StickersDecorationsView.swift in Sources */,
+				BD00000000000011 /* DecorationTabBar.swift in Sources */,
+				BD00000000000012 /* DecorationCanvasView.swift in Sources */,
+				BD00000000000013 /* DecorationItemView.swift in Sources */,
+				BD00000000000014 /* StickerPackBrowserView.swift in Sources */,
+				BD00000000000015 /* StickerRendererView.swift in Sources */,
+				BD00000000000016 /* DoodleToolView.swift in Sources */,
+				BD00000000000017 /* DoodleStrokeRendererView.swift in Sources */,
+				BD00000000000018 /* ShapeStampPickerView.swift in Sources */,
+				BD00000000000019 /* ShapeStampRendererView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
