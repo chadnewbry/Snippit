@@ -8,6 +8,7 @@ struct CollageCanvasView: View {
 
     @State private var viewModel = CanvasViewModel()
     @State private var showProjectPicker = false
+    @State private var showEffectsPanel = false
 
     private var activeProject: CollageProject? { projects.first }
 
@@ -37,20 +38,50 @@ struct CollageCanvasView: View {
                 onDelete: {
                     if let selected = viewModel.selectedItem {
                         viewModel.removeItem(selected, from: project)
+                        showEffectsPanel = false
                     }
                 }
             )
 
-            ZStack {
+            ZStack(alignment: .bottom) {
                 // Pasteboard-style surrounding area
                 Color(uiColor: .systemGroupedBackground)
                     .ignoresSafeArea()
 
                 canvasContent(project: project)
-            }
 
-            CanvasIngredientsTrayView { item in
-                dropIngredient(item, into: project)
+                // Paper effects control panel
+                if showEffectsPanel, let selected = viewModel.selectedItem {
+                    PaperEffectsControlPanel(item: selected)
+                        .padding(.horizontal, 12)
+                        .padding(.bottom, 8)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+            }
+            .animation(.easeInOut(duration: 0.25), value: showEffectsPanel)
+
+            HStack(spacing: 0) {
+                // Effects toggle button
+                Button {
+                    withAnimation {
+                        showEffectsPanel.toggle()
+                    }
+                } label: {
+                    Label("Effects", systemImage: "wand.and.stars")
+                        .font(.caption)
+                        .padding(.vertical, 8)
+                        .frame(maxWidth: .infinity)
+                }
+                .disabled(viewModel.selectedItem == nil)
+
+                CanvasIngredientsTrayView { item in
+                    dropIngredient(item, into: project)
+                }
+            }
+        }
+        .onChange(of: viewModel.selectedItem?.id) { _, newValue in
+            if newValue == nil {
+                showEffectsPanel = false
             }
         }
     }
@@ -152,7 +183,6 @@ struct CollageCanvasView: View {
     // MARK: - Ingredient Drop
 
     private func dropIngredient(_ item: ClippedItem, into project: CollageProject) {
-        // Create a copy of the item for the canvas
         let canvasItem = ClippedItem(
             imageData: item.imageData,
             position: CGPoint(
@@ -161,7 +191,12 @@ struct CollageCanvasView: View {
             ),
             rotation: Double.random(in: -0.1...0.1),
             rippedEdgeSeed: item.rippedEdgeSeed,
-            rippedEdgeRoughness: item.rippedEdgeRoughness
+            rippedEdgeRoughness: item.rippedEdgeRoughness,
+            edgeStyle: item.edgeStyle,
+            craftOverlay: item.craftOverlay,
+            agingEffect: item.agingEffect,
+            paperCurl: item.paperCurl,
+            fiberDetailIntensity: item.fiberDetailIntensity
         )
         viewModel.addItem(canvasItem, to: project)
     }

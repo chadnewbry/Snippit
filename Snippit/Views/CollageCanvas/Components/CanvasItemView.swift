@@ -26,11 +26,15 @@ struct CanvasItemView: View {
         UIImage(data: item.imageData)
     }
 
+    /// Full paper effects render: edge style + aging + fiber detail.
     private var displayImage: UIImage? {
-        PaperEffectsRenderer.applyRippedEdges(
+        PaperEffectsRenderer.applyPaperEffects(
             to: item.imageData,
             seed: item.rippedEdgeSeed,
-            roughness: item.rippedEdgeRoughness
+            roughness: item.rippedEdgeRoughness,
+            edgeStyle: item.edgeStyle,
+            agingEffect: item.agingEffect,
+            fiberIntensity: item.fiberDetailIntensity
         )
     }
 
@@ -40,7 +44,7 @@ struct CanvasItemView: View {
         let displayHeight = imageSize.height * abs(item.scaleY)
 
         ZStack {
-            // Image with ripped edges & shadow
+            // Image with paper effects & shadow
             Group {
                 if let img = displayImage {
                     Image(uiImage: img)
@@ -57,7 +61,24 @@ struct CanvasItemView: View {
                 }
             }
             .scaleEffect(x: item.scaleX < 0 ? -1 : 1, y: item.scaleY < 0 ? -1 : 1)
-            .shadow(color: .black.opacity(0.25), radius: 4, x: 2, y: 3)
+            .shadow(color: .black.opacity(0.25), radius: item.paperCurlEnabled ? 8 : 4, x: 2, y: 3)
+
+            // Paper curl overlay
+            if item.paperCurlEnabled {
+                PaperCurlView(
+                    curl: item.paperCurl,
+                    itemSize: CGSize(width: displayWidth, height: displayHeight)
+                )
+            }
+
+            // Craft overlay
+            if let overlay = item.craftOverlay {
+                CraftOverlayView(
+                    overlayType: overlay,
+                    itemSize: CGSize(width: displayWidth, height: displayHeight),
+                    seed: item.rippedEdgeSeed
+                )
+            }
 
             // Selection border + handles
             if isSelected {
