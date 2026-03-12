@@ -5,6 +5,8 @@ struct SettingsView: View {
     @AppStorage("showGridOverlay") private var showGridOverlay = true
     @AppStorage("autoSaveEnabled") private var autoSaveEnabled = true
     @AppStorage("hapticFeedbackEnabled") private var hapticFeedbackEnabled = true
+    @StateObject private var subscriptionManager = SubscriptionManager.shared
+    @State private var showPaywall = false
 
     private var appVersion: String {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
@@ -15,6 +17,36 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             List {
+                // MARK: - Premium
+                Section {
+                    if subscriptionManager.isPremium {
+                        Label("Snippit Premium", systemImage: "crown.fill")
+                            .foregroundStyle(.purple)
+                        Link(destination: URL(string: "https://apps.apple.com/account/subscriptions")!) {
+                            Label("Manage Subscription", systemImage: "creditcard")
+                        }
+                    } else {
+                        Button {
+                            showPaywall = true
+                        } label: {
+                            HStack {
+                                Label("Upgrade to Premium", systemImage: "crown")
+                                Spacer()
+                                Text("\(subscriptionManager.savesRemaining) saves left")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+
+                        Button("Restore Purchases") {
+                            Task { try? await subscriptionManager.restorePurchases() }
+                        }
+                        .font(.subheadline)
+                    }
+                } header: {
+                    Text("Subscription")
+                }
+
                 // MARK: - Collage Defaults
                 Section("Collage Defaults") {
                     Picker("Default Canvas Size", selection: $defaultCanvasSize) {
@@ -64,6 +96,9 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
+            .sheet(isPresented: $showPaywall) {
+                PaywallView()
+            }
         }
         .accessibilityIdentifier("settingsTab")
     }

@@ -82,6 +82,13 @@
 		PE00000000000003 /* PaperCurlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000013 /* PaperCurlView.swift */; };
 		PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000014 /* PaperEffectsControlPanel.swift */; };
 		SE00000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SE00000000000001 /* SettingsView.swift */; };
+		IAP0000000000001 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000011 /* SubscriptionManager.swift */; };
+		IAP0000000000002 /* PremiumContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000012 /* PremiumContent.swift */; };
+		IAP0000000000003 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000013 /* PaywallView.swift */; };
+		IAP0000000000004 /* SavesRemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000014 /* SavesRemainingView.swift */; };
+		IAP0000000000005 /* PremiumBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000015 /* PremiumBadge.swift */; };
+		IAP0000000000006 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = IAP0000000000030 /* RevenueCat */; };
+		IAP0000000000007 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = IAP0000000000031 /* RevenueCatUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +168,11 @@
 		PE00000000000013 /* PaperCurlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperCurlView.swift; path = Snippit/Views/PaperEffects/PaperCurlView.swift; sourceTree = SOURCE_ROOT; };
 		PE00000000000014 /* PaperEffectsControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperEffectsControlPanel.swift; path = Snippit/Views/PaperEffects/PaperEffectsControlPanel.swift; sourceTree = SOURCE_ROOT; };
 		SE00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Snippit/Views/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		IAP0000000000011 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		IAP0000000000012 /* PremiumContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumContent.swift; sourceTree = "<group>"; };
+		IAP0000000000013 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		IAP0000000000014 /* SavesRemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRemainingView.swift; sourceTree = "<group>"; };
+		IAP0000000000015 /* PremiumBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumBadge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				IAP0000000000006 /* RevenueCat in Frameworks */,
+				IAP0000000000007 /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +237,7 @@
 				A40000010000000000000010 /* Managers */,
 				A40000010000000000000008 /* Models */,
 				A40000010000000000000009 /* Services */,
+				IAP0000000000020 /* IAP */,
 				A20000010000000000000006 /* Assets.xcassets */,
 			);
 			path = Snippit;
@@ -409,6 +424,18 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		IAP0000000000020 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				IAP0000000000011 /* SubscriptionManager.swift */,
+				IAP0000000000012 /* PremiumContent.swift */,
+				IAP0000000000013 /* PaywallView.swift */,
+				IAP0000000000014 /* SavesRemainingView.swift */,
+				IAP0000000000015 /* PremiumBadge.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,6 +452,10 @@
 			dependencies = (
 			);
 			name = Snippit;
+			packageProductDependencies = (
+				IAP0000000000030 /* RevenueCat */,
+				IAP0000000000031 /* RevenueCatUI */,
+			);
 			productName = Snippit;
 			productReference = A20000010000000000000010 /* Snippit.app */;
 			productType = "com.apple.product-type.application";
@@ -456,6 +487,9 @@
 			productRefGroup = A40000010000000000000099 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			targets = (
 				A50000010000000000000001 /* Snippit */,
 			);
@@ -552,6 +586,11 @@
 				PE00000000000002 /* CraftOverlayView.swift in Sources */,
 				PE00000000000003 /* PaperCurlView.swift in Sources */,
 				PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */,
+				IAP0000000000001 /* SubscriptionManager.swift in Sources */,
+				IAP0000000000002 /* PremiumContent.swift in Sources */,
+				IAP0000000000003 /* PaywallView.swift in Sources */,
+				IAP0000000000004 /* SavesRemainingView.swift in Sources */,
+				IAP0000000000005 /* PremiumBadge.swift in Sources */,
 );
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -757,5 +796,29 @@
 		};
 /* End XCConfigurationList section */
 	};
+
+/* Begin XCRemoteSwiftPackageReference section */
+		IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		IAP0000000000030 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		IAP0000000000031 /* RevenueCatUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCatUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	rootObject = A90000010000000000000001 /* Project object */;
 }
