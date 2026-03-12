@@ -36,15 +36,15 @@ struct SettingsView: View {
 
                 // MARK: - Legal & Support
                 Section("Legal & Support") {
-                    Link(destination: URL(string: "https://chadnewbry.github.io/Snippit/privacy-policy")!) {
+                    Link(destination: URL(string: "https://chadnewbry.github.io/Snippit/privacy")!) {
                         Label("Privacy Policy", systemImage: "hand.raised")
                     }
 
-                    Link(destination: URL(string: "https://chadnewbry.github.io/Snippit/terms-of-use")!) {
+                    Link(destination: URL(string: "https://chadnewbry.github.io/Snippit/terms")!) {
                         Label("Terms of Use", systemImage: "doc.text")
                     }
 
-                    Link(destination: URL(string: "mailto:chad.newbry@gmail.com?subject=Snippit%20Support")!) {
+                    Link(destination: URL(string: "https://chadnewbry.github.io/Snippit/support")!) {
                         Label("Contact Support", systemImage: "envelope")
                     }
                 }
