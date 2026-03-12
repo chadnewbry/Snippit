@@ -11,12 +11,14 @@
 		094350B7B6436C67E5A90AE5 /* CanvasToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D24660C48F27A64E2120 /* CanvasToolbarView.swift */; };
 		0DE093EF8ECC4C5CA018BF91 /* SmartClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D11CAA05140A18221F958 /* SmartClippingView.swift */; };
 		11F5D08FFBEE47C49EE41977 /* ImageSourcePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CFDCCFBFAF411784DA6E76 /* ImageSourcePicker.swift */; };
+		148E6AD89CA2A09EC3E7870F /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 2C1253F7820EF4A84DC6FD47 /* RevenueCat */; };
 		1B9A702A6B1F42BBAA682F47 /* SmartClippingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D21167A4FBB4CBF9DDFFE0D /* SmartClippingViewModel.swift */; };
 		20EA4284BCC57A1D0381B0B3 /* TextStyleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33444451BAB0702F0878035B /* TextStyleEditorView.swift */; };
 		22B613B33B7541F29E77B1C1 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44C7B44AB14C44B7B0B37D /* CameraCaptureView.swift */; };
 		2C8E4B28B55CB24D340EA25B /* TextTypographyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75044F3FA81853C925E97081 /* TextTypographyView.swift */; };
 		6B8947649CD46937606155C9 /* FontPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14234BE2AE2AFAA71B502CA2 /* FontPickerView.swift */; };
 		78F395AB1A42E8EF5067E374 /* GridOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AEC9206C7F336346C39C /* GridOverlayView.swift */; };
+		7D413901B592794CCD8BC353 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 49290BFDBC7A70FC9B41F0E8 /* RevenueCatUI */; };
 		870813614A02AAE953E37996 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8283D8089F8B899594C91205 /* CanvasViewModel.swift */; };
 		87784215A931024B5F1A51B0 /* TextOnPaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DA4B6CBF2F262459BBA68E /* TextOnPaperView.swift */; };
 		898442789BDCE56DBB63E223 /* RansomNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB848DA910E1576BCE5DCF8 /* RansomNoteView.swift */; };
@@ -57,13 +59,6 @@
 		A10000010000000000000206 /* InspirationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000206 /* InspirationGalleryView.swift */; };
 		A10000010000000000000207 /* IngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000207 /* IngredientsTrayView.swift */; };
 		A262A8507313267DF832E041 /* CanvasBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F65E64D7B282E2AF12E92 /* CanvasBackgroundView.swift */; };
-		C6BF7E5E0DB524264A81916C /* CanvasIngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D7793478F8E9F0D098815 /* CanvasIngredientsTrayView.swift */; };
-		D88D44A0A29D5677CF84AE37 /* FontLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22346348A999A8D5175B847 /* FontLibrary.swift */; };
-		DA3518DB19FE862671C8375C /* SnapGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB605480799EC7433059B2A /* SnapGuidesView.swift */; };
-		E78057699F06B6FC1F11FB68 /* CanvasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AA64038EEA7CDF4A7ED22 /* CanvasItemView.swift */; };
-		EC164F298FC03AF6283C2335 /* TextElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D45B5A28CEB1865758412 /* TextElementView.swift */; };
-		F885BFEAD5444768AB8C3D47 /* ClippingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81735628E7480E9A636B9D /* ClippingToolbar.swift */; };
-		F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */; };
 		BD00000000000001 /* StickerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000001 /* StickerItem.swift */; };
 		BD00000000000002 /* DoodleBrush.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000002 /* DoodleBrush.swift */; };
 		BD00000000000003 /* ShapeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000003 /* ShapeStamp.swift */; };
@@ -77,18 +72,23 @@
 		BD00000000000017 /* DoodleStrokeRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000017 /* DoodleStrokeRendererView.swift */; };
 		BD00000000000018 /* ShapeStampPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000018 /* ShapeStampPickerView.swift */; };
 		BD00000000000019 /* ShapeStampRendererView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SD00000000000019 /* ShapeStampRendererView.swift */; };
-		PE00000000000001 /* PaperEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000011 /* PaperEffect.swift */; };
-		PE00000000000002 /* CraftOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000012 /* CraftOverlayView.swift */; };
-		PE00000000000003 /* PaperCurlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000013 /* PaperCurlView.swift */; };
-		PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000014 /* PaperEffectsControlPanel.swift */; };
-		SE00000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SE00000000000001 /* SettingsView.swift */; };
+		C6BF7E5E0DB524264A81916C /* CanvasIngredientsTrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D7793478F8E9F0D098815 /* CanvasIngredientsTrayView.swift */; };
+		D88D44A0A29D5677CF84AE37 /* FontLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22346348A999A8D5175B847 /* FontLibrary.swift */; };
+		DA3518DB19FE862671C8375C /* SnapGuidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB605480799EC7433059B2A /* SnapGuidesView.swift */; };
+		E78057699F06B6FC1F11FB68 /* CanvasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274AA64038EEA7CDF4A7ED22 /* CanvasItemView.swift */; };
+		EC164F298FC03AF6283C2335 /* TextElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533D45B5A28CEB1865758412 /* TextElementView.swift */; };
+		F885BFEAD5444768AB8C3D47 /* ClippingToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81735628E7480E9A636B9D /* ClippingToolbar.swift */; };
+		F9883BE7D0114392A18E2ABA /* ClipConfirmationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */; };
 		IAP0000000000001 /* SubscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000011 /* SubscriptionManager.swift */; };
 		IAP0000000000002 /* PremiumContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000012 /* PremiumContent.swift */; };
 		IAP0000000000003 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000013 /* PaywallView.swift */; };
 		IAP0000000000004 /* SavesRemainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000014 /* SavesRemainingView.swift */; };
 		IAP0000000000005 /* PremiumBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = IAP0000000000015 /* PremiumBadge.swift */; };
-		IAP0000000000006 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = IAP0000000000030 /* RevenueCat */; };
-		IAP0000000000007 /* RevenueCatUI in Frameworks */ = {isa = PBXBuildFile; productRef = IAP0000000000031 /* RevenueCatUI */; };
+		PE00000000000001 /* PaperEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000011 /* PaperEffect.swift */; };
+		PE00000000000002 /* CraftOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000012 /* CraftOverlayView.swift */; };
+		PE00000000000003 /* PaperCurlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000013 /* PaperCurlView.swift */; };
+		PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000014 /* PaperEffectsControlPanel.swift */; };
+		SE00000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SE00000000000001 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +150,15 @@
 		ED81736C9F624F3B9638FED2 /* ClipConfirmationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipConfirmationSheet.swift; sourceTree = "<group>"; };
 		F22346348A999A8D5175B847 /* FontLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontLibrary.swift; path = Snippit/Models/FontLibrary.swift; sourceTree = SOURCE_ROOT; };
 		F2DA4B6CBF2F262459BBA68E /* TextOnPaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextOnPaperView.swift; path = Snippit/Views/TextTypography/Components/TextOnPaperView.swift; sourceTree = SOURCE_ROOT; };
+		IAP0000000000011 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
+		IAP0000000000012 /* PremiumContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumContent.swift; sourceTree = "<group>"; };
+		IAP0000000000013 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		IAP0000000000014 /* SavesRemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRemainingView.swift; sourceTree = "<group>"; };
+		IAP0000000000015 /* PremiumBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumBadge.swift; sourceTree = "<group>"; };
+		PE00000000000011 /* PaperEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperEffect.swift; path = Snippit/Models/PaperEffect.swift; sourceTree = SOURCE_ROOT; };
+		PE00000000000012 /* CraftOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CraftOverlayView.swift; path = Snippit/Views/PaperEffects/CraftOverlayView.swift; sourceTree = SOURCE_ROOT; };
+		PE00000000000013 /* PaperCurlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperCurlView.swift; path = Snippit/Views/PaperEffects/PaperCurlView.swift; sourceTree = SOURCE_ROOT; };
+		PE00000000000014 /* PaperEffectsControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperEffectsControlPanel.swift; path = Snippit/Views/PaperEffects/PaperEffectsControlPanel.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000001 /* StickerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StickerItem.swift; path = Snippit/Models/StickerItem.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000002 /* DoodleBrush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoodleBrush.swift; path = Snippit/Models/DoodleBrush.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000003 /* ShapeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStamp.swift; path = Snippit/Models/ShapeStamp.swift; sourceTree = SOURCE_ROOT; };
@@ -163,16 +172,7 @@
 		SD00000000000017 /* DoodleStrokeRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoodleStrokeRendererView.swift; path = Snippit/Views/StickersDecorations/Components/DoodleStrokeRendererView.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000018 /* ShapeStampPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampPickerView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampPickerView.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000019 /* ShapeStampRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampRendererView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampRendererView.swift; sourceTree = SOURCE_ROOT; };
-		PE00000000000011 /* PaperEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperEffect.swift; path = Snippit/Models/PaperEffect.swift; sourceTree = SOURCE_ROOT; };
-		PE00000000000012 /* CraftOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CraftOverlayView.swift; path = Snippit/Views/PaperEffects/CraftOverlayView.swift; sourceTree = SOURCE_ROOT; };
-		PE00000000000013 /* PaperCurlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperCurlView.swift; path = Snippit/Views/PaperEffects/PaperCurlView.swift; sourceTree = SOURCE_ROOT; };
-		PE00000000000014 /* PaperEffectsControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PaperEffectsControlPanel.swift; path = Snippit/Views/PaperEffects/PaperEffectsControlPanel.swift; sourceTree = SOURCE_ROOT; };
 		SE00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Snippit/Views/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
-		IAP0000000000011 /* SubscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionManager.swift; sourceTree = "<group>"; };
-		IAP0000000000012 /* PremiumContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumContent.swift; sourceTree = "<group>"; };
-		IAP0000000000013 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
-		IAP0000000000014 /* SavesRemainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavesRemainingView.swift; sourceTree = "<group>"; };
-		IAP0000000000015 /* PremiumBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumBadge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +180,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				IAP0000000000006 /* RevenueCat in Frameworks */,
-				IAP0000000000007 /* RevenueCatUI in Frameworks */,
+				148E6AD89CA2A09EC3E7870F /* RevenueCat in Frameworks */,
+				7D413901B592794CCD8BC353 /* RevenueCatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +260,9 @@
 				A40000010000000000000007 /* CollageCanvas */,
 				33A08EB9A4604019B7CC025F /* SmartClipping */,
 				SD00000000000080 /* StickersDecorations */,
-							PE00000000000020 /* PaperEffects */,
+				PE00000000000020 /* PaperEffects */,
 				SE00000000000003 /* Settings */,
-);
+			);
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -312,8 +312,8 @@
 				SD00000000000001 /* StickerItem.swift */,
 				SD00000000000002 /* DoodleBrush.swift */,
 				SD00000000000003 /* ShapeStamp.swift */,
-							PE00000000000011 /* PaperEffect.swift */,
-);
+				PE00000000000011 /* PaperEffect.swift */,
+			);
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -380,6 +380,38 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		IAP0000000000020 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				IAP0000000000011 /* SubscriptionManager.swift */,
+				IAP0000000000012 /* PremiumContent.swift */,
+				IAP0000000000013 /* PaywallView.swift */,
+				IAP0000000000014 /* SavesRemainingView.swift */,
+				IAP0000000000015 /* PremiumBadge.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
+		PE00000000000020 /* PaperEffects */ = {
+			isa = PBXGroup;
+			children = (
+				PE00000000000012 /* CraftOverlayView.swift */,
+				PE00000000000013 /* PaperCurlView.swift */,
+				PE00000000000014 /* PaperEffectsControlPanel.swift */,
+			);
+			name = PaperEffects;
+			path = PaperEffects;
+			sourceTree = "<group>";
+		};
+		SD00000000000080 /* StickersDecorations */ = {
+			isa = PBXGroup;
+			children = (
+				SD00000000000010 /* StickersDecorationsView.swift */,
+				SD00000000000090 /* Components */,
+			);
+			path = StickersDecorations;
+			sourceTree = "<group>";
+		};
 		SD00000000000090 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -396,44 +428,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		SD00000000000080 /* StickersDecorations */ = {
-			isa = PBXGroup;
-			children = (
-				SD00000000000010 /* StickersDecorationsView.swift */,
-				SD00000000000090 /* Components */,
-			);
-			path = StickersDecorations;
-			sourceTree = "<group>";
-		};
-		PE00000000000020 /* PaperEffects */ = {
-			isa = PBXGroup;
-			children = (
-				PE00000000000012 /* CraftOverlayView.swift */,
-				PE00000000000013 /* PaperCurlView.swift */,
-				PE00000000000014 /* PaperEffectsControlPanel.swift */,
-			);
-			name = PaperEffects;
-			path = PaperEffects;
-			sourceTree = "<group>";
-		};
 		SE00000000000003 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				SE00000000000001 /* SettingsView.swift */,
 			);
 			name = Settings;
-			sourceTree = "<group>";
-		};
-		IAP0000000000020 /* IAP */ = {
-			isa = PBXGroup;
-			children = (
-				IAP0000000000011 /* SubscriptionManager.swift */,
-				IAP0000000000012 /* PremiumContent.swift */,
-				IAP0000000000013 /* PaywallView.swift */,
-				IAP0000000000014 /* SavesRemainingView.swift */,
-				IAP0000000000015 /* PremiumBadge.swift */,
-			);
-			path = IAP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,8 +453,8 @@
 			);
 			name = Snippit;
 			packageProductDependencies = (
-				IAP0000000000030 /* RevenueCat */,
-				IAP0000000000031 /* RevenueCatUI */,
+				2C1253F7820EF4A84DC6FD47 /* RevenueCat */,
+				49290BFDBC7A70FC9B41F0E8 /* RevenueCatUI */,
 			);
 			productName = Snippit;
 			productReference = A20000010000000000000010 /* Snippit.app */;
@@ -484,12 +484,12 @@
 				Base,
 			);
 			mainGroup = A40000010000000000000001;
+			packageReferences = (
+				7CE832B37E7F82FE2380DA0C /* XCRemoteSwiftPackageReference "purchases-ios" */,
+			);
 			productRefGroup = A40000010000000000000099 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
-			packageReferences = (
-				IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */,
-			);
 			targets = (
 				A50000010000000000000001 /* Snippit */,
 			);
@@ -582,7 +582,7 @@
 				BD00000000000017 /* DoodleStrokeRendererView.swift in Sources */,
 				BD00000000000018 /* ShapeStampPickerView.swift in Sources */,
 				BD00000000000019 /* ShapeStampRendererView.swift in Sources */,
-							PE00000000000001 /* PaperEffect.swift in Sources */,
+				PE00000000000001 /* PaperEffect.swift in Sources */,
 				PE00000000000002 /* CraftOverlayView.swift in Sources */,
 				PE00000000000003 /* PaperCurlView.swift in Sources */,
 				PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */,
@@ -591,12 +591,11 @@
 				IAP0000000000003 /* PaywallView.swift in Sources */,
 				IAP0000000000004 /* SavesRemainingView.swift in Sources */,
 				IAP0000000000005 /* PremiumBadge.swift in Sources */,
-);
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
-
 /* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
 		B10000010000000000000001 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -795,10 +794,9 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-	};
 
 /* Begin XCRemoteSwiftPackageReference section */
-		IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+		7CE832B37E7F82FE2380DA0C /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
 			requirement = {
@@ -809,16 +807,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		IAP0000000000030 /* RevenueCat */ = {
+		2C1253F7820EF4A84DC6FD47 /* RevenueCat */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			package = 7CE832B37E7F82FE2380DA0C /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCat;
 		};
-		IAP0000000000031 /* RevenueCatUI */ = {
+		49290BFDBC7A70FC9B41F0E8 /* RevenueCatUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = IAP0000000000040 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			package = 7CE832B37E7F82FE2380DA0C /* XCRemoteSwiftPackageReference "purchases-ios" */;
 			productName = RevenueCatUI;
 		};
 /* End XCSwiftPackageProductDependency section */
+	};
 	rootObject = A90000010000000000000001 /* Project object */;
 }
