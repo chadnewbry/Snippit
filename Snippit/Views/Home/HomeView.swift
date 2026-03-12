@@ -52,6 +52,11 @@ struct HomeView: View {
                 IngredientsTrayView()
             }
             .navigationTitle("Snippit")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    SavesRemainingView()
+                }
+            }
         }
         .accessibilityIdentifier("homeTab")
     }
