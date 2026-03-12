@@ -18,9 +18,9 @@ struct ContentView: View {
                     Label("Collage Canvas", systemImage: "rectangle.on.rectangle")
                 }
 
-            TextTypographyView()
+            SettingsView()
                 .tabItem {
-                    Label("Text", systemImage: "textformat")
+                    Label("Settings", systemImage: "gearshape")
                 }
         }
     }
