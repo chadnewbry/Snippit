@@ -76,7 +76,12 @@ struct SettingsView: View {
                         Label("Terms of Use", systemImage: "doc.text")
                     }
 
-                    Link(destination: URL(string: AppConfig.shared.urls.support)!) {
+                    Button {
+                        let email = AppConfig.shared.review?.contactEmail ?? "chad.newbry@gmail.com"
+                        if let url = URL(string: "mailto:\(email)") {
+                            UIApplication.shared.open(url)
+                        }
+                    } label: {
                         Label("Contact Support", systemImage: "envelope")
                     }
                 }
