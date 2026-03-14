@@ -84,6 +84,15 @@ struct SettingsView: View {
                     } label: {
                         Label("Contact Support", systemImage: "envelope")
                     }
+
+                    Button {
+                        let email = AppConfig.shared.review?.contactEmail ?? "chad.newbry@gmail.com"
+                        if let url = URL(string: "mailto:\(email)?subject=Feedback:%20Snippit") {
+                            UIApplication.shared.open(url)
+                        }
+                    } label: {
+                        Label("Feedback / Product Suggestions", systemImage: "lightbulb")
+                    }
                 }
 
                 // MARK: - About
