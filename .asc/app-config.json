@@ -1,0 +1,21 @@
+{
+  "bundleId": "com.chadnewbry.snippit",
+  "appName": "Snippit",
+  "copyright": "© 2026 Chad Newbry",
+  "urls": {
+    "website": "https://chadnewbry.github.io/Snippit/",
+    "privacyPolicy": "https://chadnewbry.github.io/Snippit/privacy",
+    "termsOfService": "https://chadnewbry.github.io/Snippit/terms",
+    "support": "https://chadnewbry.github.io/Snippit/support"
+  },
+  "revenueCat": {
+    "apiKey": "appl_snippit_revenuecat_api_key"
+  },
+  "review": {
+    "demoAccountRequired": false,
+    "contactFirstName": "Chad",
+    "contactLastName": "Newbry",
+    "contactEmail": "chad.newbry@gmail.com",
+    "contactPhone": "+15417605021"
+  }
+}

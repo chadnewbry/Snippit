@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0001000000000000000002 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0001000000000000000001 /* AppConfig.swift */; };
+		AC0001000000000000000004 /* .asc in Resources */ = {isa = PBXBuildFile; fileRef = AC0001000000000000000003 /* .asc */; };
 		0151953FB71545E1B6D73364 /* ClippingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE30DEA237F422181804097 /* ClippingCanvasView.swift */; };
 		094350B7B6436C67E5A90AE5 /* CanvasToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD44D24660C48F27A64E2120 /* CanvasToolbarView.swift */; };
 		0DE093EF8ECC4C5CA018BF91 /* SmartClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231D11CAA05140A18221F958 /* SmartClippingView.swift */; };
@@ -92,6 +94,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0001000000000000000001 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		AC0001000000000000000003 /* .asc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .asc; sourceTree = SOURCE_ROOT; };
 		0D21167A4FBB4CBF9DDFFE0D /* SmartClippingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartClippingViewModel.swift; sourceTree = "<group>"; };
 		12A24052B31552087542D6BF /* TextElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextElement.swift; path = Snippit/Models/TextElement.swift; sourceTree = SOURCE_ROOT; };
 		14234BE2AE2AFAA71B502CA2 /* FontPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FontPickerView.swift; path = Snippit/Views/TextTypography/Components/FontPickerView.swift; sourceTree = SOURCE_ROOT; };
@@ -323,6 +327,7 @@
 				A20000010000000000000106 /* AIClippingEngine.swift */,
 				A20000010000000000000107 /* PaperEffectsRenderer.swift */,
 				A20000010000000000000108 /* CloudKitSyncManager.swift */,
+				AC0001000000000000000001 /* AppConfig.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -502,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10000010000000000000006 /* Assets.xcassets in Resources */,
+				AC0001000000000000000004 /* .asc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +520,7 @@
 			files = (
 				SE00000000000002 /* SettingsView.swift in Sources */,
 				A10000010000000000000001 /* SnippitApp.swift in Sources */,
+				AC0001000000000000000002 /* AppConfig.swift in Sources */,
 				A10000010000000000000002 /* ContentView.swift in Sources */,
 				A10000010000000000000003 /* HomeView.swift in Sources */,
 				A10000010000000000000004 /* MagazineBrowserView.swift in Sources */,
