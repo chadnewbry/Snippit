@@ -37,7 +37,7 @@ final class SubscriptionManager: ObservableObject {
 
     func configure() {
         Purchases.logLevel = .warn
-        Purchases.configure(withAPIKey: "appl_snippit_revenuecat_api_key")
+        Purchases.configure(withAPIKey: AppConfig.shared.revenueCat!.apiKey)
 
         Task {
             await refreshStatus()
