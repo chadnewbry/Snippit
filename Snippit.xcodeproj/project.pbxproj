@@ -91,6 +91,7 @@
 		PE00000000000003 /* PaperCurlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000013 /* PaperCurlView.swift */; };
 		PE00000000000004 /* PaperEffectsControlPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = PE00000000000014 /* PaperEffectsControlPanel.swift */; };
 		SE00000000000002 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = SE00000000000001 /* SettingsView.swift */; };
+		SS00000000000003 /* ScreenshotSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = SS00000000000001 /* ScreenshotSampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -177,6 +178,7 @@
 		SD00000000000018 /* ShapeStampPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampPickerView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampPickerView.swift; sourceTree = SOURCE_ROOT; };
 		SD00000000000019 /* ShapeStampRendererView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShapeStampRendererView.swift; path = Snippit/Views/StickersDecorations/Components/ShapeStampRendererView.swift; sourceTree = SOURCE_ROOT; };
 		SE00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Snippit/Views/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		SS00000000000001 /* ScreenshotSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScreenshotSampleData.swift; path = Snippit/Utilities/ScreenshotSampleData.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +244,8 @@
 				A40000010000000000000008 /* Models */,
 				A40000010000000000000009 /* Services */,
 				IAP0000000000020 /* IAP */,
-				A20000010000000000000006 /* Assets.xcassets */,
+				A20000010000000000000006 /* Assets.xcassets */,				SS00000000000002 /* Utilities */,
+
 			);
 			path = Snippit;
 			sourceTree = "<group>";
@@ -441,6 +444,14 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		SS00000000000002 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				SS00000000000001 /* ScreenshotSampleData.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -597,7 +608,8 @@
 				IAP0000000000002 /* PremiumContent.swift in Sources */,
 				IAP0000000000003 /* PaywallView.swift in Sources */,
 				IAP0000000000004 /* SavesRemainingView.swift in Sources */,
-				IAP0000000000005 /* PremiumBadge.swift in Sources */,
+				IAP0000000000005 /* PremiumBadge.swift in Sources */,				SS00000000000003 /* ScreenshotSampleData.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
