@@ -1,0 +1,45 @@
+appId: com.chadnewbry.snippit
+name: "Capture App Store Screenshots"
+---
+
+# 1. Launch with clean state to seed screenshot data
+- launchApp:
+    appId: com.chadnewbry.snippit
+    clearState: true
+    arguments:
+      --screenshot-mode: ""
+
+# 2. Relaunch without clearing so @Query picks up seeded data
+- launchApp:
+    appId: com.chadnewbry.snippit
+    clearState: false
+    arguments:
+      --screenshot-mode: ""
+
+# 3. Capture screenshots
+
+# -- Screenshot 1: Home (project gallery) --
+- waitForAnimationToEnd
+- takeScreenshot: "01-home"
+
+# -- Screenshot 2: Magazine Browser --
+- tapOn: "Magazine Browser"
+- waitForAnimationToEnd
+- takeScreenshot: "02-magazine-browser"
+
+# -- Screenshot 3: Collage Canvas --
+- tapOn: "Collage Canvas"
+- waitForAnimationToEnd
+- takeScreenshot: "03-collage-canvas"
+
+# -- Screenshot 4: Back to Home, tap a project for detail --
+- tapOn: "Home"
+- waitForAnimationToEnd
+- tapOn: "Summer in Positano"
+- waitForAnimationToEnd
+- takeScreenshot: "04-project-detail"
+
+# -- Screenshot 5: Settings --
+- tapOn: "Settings"
+- waitForAnimationToEnd
+- takeScreenshot: "05-settings"

@@ -1,0 +1,38 @@
+{
+  "screenshots": [
+    {
+      "filename": "01-home.png",
+      "header": "Your Digital Collage Table",
+      "subtitle": "All your projects in one beautiful place"
+    },
+    {
+      "filename": "02-magazine-browser.png",
+      "header": "Browse Vintage Magazines",
+      "subtitle": "Thousands of pages from the Internet Archive"
+    },
+    {
+      "filename": "03-collage-canvas.png",
+      "header": "Craft Beautiful Collages",
+      "subtitle": "Rip, tear, and layer with realistic paper effects"
+    },
+    {
+      "filename": "04-project-detail.png",
+      "header": "Every Detail Matters",
+      "subtitle": "Aging effects, washi tape, and hand-torn edges"
+    },
+    {
+      "filename": "05-settings.png",
+      "header": "Make It Yours",
+      "subtitle": "Customize your creative workspace"
+    }
+  ],
+  "theme": {
+    "backgroundColor": "#FFF8F0",
+    "headerColor": "#2C3E50",
+    "subtitleColor": "#7F8C8D",
+    "headerFont": "Georgia-Bold",
+    "subtitleFont": "Georgia",
+    "headerSize": 72,
+    "subtitleSize": 36
+  }
+}
