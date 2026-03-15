@@ -1,0 +1,7 @@
+appId: com.chadnewbry.snippit
+---
+- launchApp
+- tapOn: "Settings"
+- tapOn: "Upgrade to Premium"
+- waitForAnimationToEnd
+- takeScreenshot: paywall
